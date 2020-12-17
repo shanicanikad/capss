@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./covidTracking.css";
 import logo2 from "../src/Images/download.png"
 import Nav from "./Nav.js";
-import JwPagination from "jw-react-pagination"
+// import JwPagination from "jw-react-pagination"
 
 
 class CovidTracking extends Component {
