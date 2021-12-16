@@ -6,8 +6,8 @@ body {
 }
 
 img {
-    height: 300px;
-    width: auto
+    height: 100%;
+    width: 100%
 }
 
 .border1 {
@@ -19,12 +19,23 @@ p {
     padding: 20px
 }
 
-.pics {
-    height: 100px;
-    width: auto
-}
 .container-grid1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
+.new, .delete, .update {
+    border: 2px solid blue;
+    padding: 0;
+    margin: 0
+}
+.new:hover, .delete:hover, .update:hover {
+    color: lightblue;
+}
+.line {
+    border: 2px solid lightblue;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+
+}

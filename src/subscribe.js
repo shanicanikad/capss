@@ -11,8 +11,10 @@ class Subscribe extends Component {
         return (
             <div className="forMore"> For Daily Updates, Please Subscribe
                 <div class="contain1">
-                    <input type="text" placeholder="Email address" name="mail" required />
-                    <button onClick={() => alert("Thank you for Subscribing!")}> Subscribe </button>
+                    <form action="https://formsubmit.co/shanicanikad@gmail.com" method="POST">
+                        <input type="text" placeholder="Email address" name="mail" required />
+                        <button onClick={() => alert("Thank you for Subscribing!")}> <input type="submit" value="Subscribe" /></button>
+                    </form>
                 </div>
             </div>
         )

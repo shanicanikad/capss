@@ -17,13 +17,14 @@ class Testing extends Component {
                 <h3>Testing for COVID-19</h3>
                 <div className="container-grid2">
                     {this.props.data.length !== 0
-                        ? this.props.data.map((item) => (
+                        ? this.props.data.map((item) => (<div className="container">
                             <div class="border2">
                                 <p>Product: {item.product}</p>
                                 <p>Efficiency: {item.average_efficiency_percentage}%</p>
                                 <p>Average Cost: ${item.average_pricing_USD}.00</p>
                                 {item.available.map(product => (<div> <p>Where Available: {product.place}</p> <img src={product.image_url} /> <p><a href={product.infoLink}>Click Here for More Information</a></p> </div>))}
                             </div>
+                        </div>
                         ))
                         : null}
                 </div>

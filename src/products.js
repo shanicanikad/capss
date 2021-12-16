@@ -65,9 +65,9 @@ class Products extends Component {
                             <div class="border1">
                                 <p>Product: {item.product}</p>
                                 <p>Efficiency: {item.average_efficiency_percentage}%</p>
-                                <p>Average Cost: ${item.average_pricing_USD}.00</p>
+                                <p className="line">Average Cost: ${item.average_pricing_USD}.00</p>
                                 <p><a href={item.infoLink}>Click Here for Important Health Information</a></p>
-                                <div className="box">{item.available.map(product => (<div> <p>Where Available: {product.place}</p> <img src={product.image_url} className="pics" /> <p>Price: ${product.price}</p> <p><a href={product.link}>Buy Here</a></p> </div>))} </div>
+                                <div className="box">{item.available.map(product => (<div> <p>Where Available: {product.place}</p> <img src={product.image_url} className="pics" /> <p>Price: ${product.price}</p> <p className="line"><a href={product.link}>Buy Here</a></p> </div>))} </div>
 
                                 <a href="#" className="delete" onClick={() => this.handleDelete(item._id)}>
                                     Delete

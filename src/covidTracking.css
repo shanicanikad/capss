@@ -5,31 +5,28 @@ body {
     margin: 0
 }
 
-.four {
-    border: 2px solid blue;
-}
-
 .newMap {
     padding-top: 40px;
     height: 100%;
     width: 100%
 }
 
-.logo {
-    padding-top: 40px;
-    height: 100%;
-    width: 100%
-}
-
 button {
-    margin: 30px
+    margin: 30px;
 }
 .container-grid4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .container {
     border: 2px solid blue;
     margin: 10px
+}
+
+#next {
+    border: 2px solid blue
+}
+#next:hover {
+    color: lightblue;
 }

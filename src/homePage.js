@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, Switch, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./homePage.css";
 import logo1 from "../src/Images/COVIDMAP.png"
 import Subscribe from "./subscribe";
@@ -13,18 +13,12 @@ function HomePage() {
       <div className="container">
         <h1 className="headline">Welcome to your COVID Informational Guide, Your Guide to All Things COVID-19</h1>
         <div className="links">
-          <a href="/products" className="link">
-            Products
-           </a>
-          <a href="/testing" className="link">
-            COVID-19 Testing
-            </a>
-          <a href="/vaccine" className="link">
-            Pfizer Vaccine
-            </a>
-          <a href="/covidTracking" className="link">
-            COVID-19 Tracking 2020
-            </a>
+        <ul>
+                <button className= 'tab'><Link className= 'change' to='/products'>Products</Link></button>
+                <button className= 'tab'><Link className= 'change' to='/testing'>Testing</Link></button>
+                <button className= 'tab'><Link className= 'change' to='/vaccine'>Pfizer</Link></button>
+                <button className= 'tab'><Link className= 'change' to='/covidTracking'>Tracking 2020</Link></button>
+            </ul>
         </div>
         <p className="map">COVID TRACKING MAP</p>
         <div><img src={logo1} className="theMap" /></div>

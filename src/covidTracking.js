@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./covidTracking.css";
 import logo2 from "../src/Images/download.png"
 import Nav from "./Nav.js";
-// import JwPagination from "jw-react-pagination"
 
 
 class CovidTracking extends Component {
@@ -12,7 +11,7 @@ class CovidTracking extends Component {
     }
 
     paginate = () => {
-        if (this.state.pagination <= this.props.data.length - 5)
+        if (this.state.pagination <= this.props.data.length - 3)
         {let value = this.state.pagination + 5
         this.setState ({pagination: value})}
     }
@@ -25,7 +24,6 @@ class CovidTracking extends Component {
                 <h1>How to Stop the Spread of COVID-19</h1>
                 <h3>Daily COVID-19 Tracking in the United States</h3>
                 <a className="more" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">MORE INFORMATION</a>
-                <div><button onClick= {this.paginate}>Next Set</button></div>
                 <img src={logo2} className="newMap" />
 
                 <div className="container-grid4">
@@ -39,9 +37,11 @@ class CovidTracking extends Component {
                             <p className="covid">Recovered: {covidTracking.recovered}</p>
                             <p className="covid">Deaths: {covidTracking.death}</p>
                         </div>
+                        
                         ))
                         : null}
                 </div>
+                <div><button id="next" onClick= {this.paginate}>Next Set</button></div>
             </div>
         );
     }

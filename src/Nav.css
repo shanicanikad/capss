@@ -1,7 +1,11 @@
-.tab {
-    padding: 50px;
+.change {
     text-decoration: none;
     color: blue;
-    margin-top: 100px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline;
+}
+.tab {
+    border: none;
 }
