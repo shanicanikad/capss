@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+END COVID NOW!
 
-## Available Scripts
+Welcome to your Covid Informational Guide, your guide to all things Covid-19.
 
-In the project directory, you can run:
+Here, (https://sdcapstoneproject.vercel.app/), the user is redirected to the landing page. 
 
-### `npm start`
+From the landing page, the user can click on "Click Here". This will bring the user to the main page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+On the main page, the user can click on either of the four buttons: "Products", "Testing", "Vaccine", and "Covid Traking". Clicking on one of these buttons redirects the user to another page. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+When directed to the "Products" tab, the user will be redirected to the 'Products' page where he or she can view different products that aid in the protection against Covid. The user can view the different product's average pricing based on three different stores that each product can be found in and each product's average efficiency. 
 
-### `npm test`
+When directed to the "Testing" tab, the user will be redirected to the 'Testing' page where he or she can view different forms of testing that can detect whether a person has Covid-19 or not. The user can also find information about where to get each testing done.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When directed to the "Vaccine" tab, the user will be redirected to the 'Vaccine' page where he or she can view information about the upcoming vaccine by Pfizer. 
 
-### `npm run build`
+And finally, when directed to the "Covid Tracking" tab, the user will be redirected to the 'Covid Tracking' page where he or she can view the projected Covid-19 tracking data in the United States from the beginning of this year.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On each separate page, there are three tabs that the user can click on: "Update", "Delete", and "Add a Product". 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+"Update" will allow the user to update information such as updating the average efficiency of a product in the products section. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"Delete" will allow the user to delete information that is no longer relevent like data on the 'Covid Tracking' page that occurred pre-Covid.
 
-### `npm run eject`
+Finally, "Add a Product" allows the user to create new information because as we know, our information about Covid is forever changing!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+At the bottom of the main page, there is a "Subscibe" button and next to the button is a form that the user can enter their email address. When the user clicks the "Subscribe" button, an alert will pop up on the screen saying, "Thanks for Subscribing!"
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+** Front-end made with React.js and Javascript **
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For the provided APIs...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+With the https://sdcapstone.herokuapp.com/, the user starts ar the root url/ directory which presents a blank page. Once here, the user needs to add to the root '/products' to access the products api, '/testing' to access the testing api, '/vaccine' to access the vaccine api, and '/covidTracking' to access the Covid tracking api.
 
-### Code Splitting
+Once the user gets redirected to the "https://sdcapstone.herokuapp.com/products" page, the user can find information on different products that help lessen the spread of Covid and their different average efficiency, average pricing, where each product is available and cost at each location, and an informational link about each product.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Once the user gets redirected to the "https://sdcapstone.herokuapp.com/testing" page, the user can find information on different forms of testing for Covid-19. For each test, there is information about each test's average efficiency, average pricing, where each are available and an informational link about each test.
 
-### Analyzing the Bundle Size
+Once the user gets redirected to the "https://sdcapstone.herokuapp.com/vaccine" page, the user can find information on the Pfizer vaccine set to come out in the next week or so. There is information about the vaccine's average efficiency, average pricing, where it is available and an informational link about the vaccine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once the user gets redirected to the "https://sdcapstone.herokuapp.com/covidTracking" page, the user can find information on daily Covid tracking in the United State dating all the way back to January 2020. Here, the user can find tons of information like a specific date, how many positive and negative tests were collected for that specific date, how much hospilization among Covid patient has increased for a specific date, and so on!
 
-### Making a Progressive Web App
+The user can add a given id of a specific product, test, vaccine, or covid tracking data to the end of the root url to find specific information on whatever the user wants to search for.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+New information is added/ created for the user to view daily, included updated covid tracking information.
 
-### Advanced Configuration
+Information is updated frequently due to the ever changing information being released about Covid daily.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Information that becomes irrelevent or outdated is frequently deleted.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+** Back-end made with Node.js, Mongo, Mongoose, CORS, and Express **
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+** Front end information based on Products API, Testing API, and Vaccine API by Shanica Denis and Covid Tracking API from the COVID Tracking Project Data Api **
+
+
+
+
